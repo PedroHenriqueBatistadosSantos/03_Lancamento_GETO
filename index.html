@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G&TO - Casa de Moda com Roupas no Estilo Natural Esportivo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/logo.png">
+    <meta name="description" content="Uma Casa de Moda comprometida com o movimento ESG, focada em roupas no Estilo Natural Esportivo
+    para quem busca por roupas confortáveis e despojadas.">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <script>
+        function mensagem() {
+            alert("Você será redirecionado para o seu servidor de email," + "caso não esteja logado no seu email, efetue o login e tente novamente!")
+        }
+
+        function click_menu(){
+            if(itens.style.display == 'block')
+            {
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+
+        function tamanho_site(){
+            if(window.innerWidth > 768){
+                itens.style.display = 'flex'
+            }else{
+                itens.style.display= 'none'
+        }
+    }
+
+    </script>
+    <script src="https://kit.fontawesome.com/08f1a508a9.js" crossorigin="anonymous"></script>
+</head>
+
+<body onresize="tamanho_Site()">
+    <header>
+        <nav class="alinhamento">
+
+            <a class="link_logo" href="#">
+                <img class="logo" src="./img/logo.png" alt="O logotipo da Jeito é composto por uma fonte sem serifa, moderna e condensada,
+                além disso, a paleta de cores contém branco e bege, sendo que o bege está no símbolo do E comercial. O logo está em um fundo verde.">
+            </a>
+
+            <ul class="menu" id="itens">
+                <li><a href="#">Home</a></li>
+                <li><a href="#quem_somos">Quem Somos?</a></li>
+                <li><a href="#conheca_esg">Conheça a ESG</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <span id="burguer" class="material-symbols-outlined" onclick="click_menu()">menu</span>
+
+        </nav>
+    </header>
+    <main>
+        
+        <h1>Pagina Inicial da Jeito</h1>
+        <section class="quem_somos alinhamento" id="quem_somos">
+            <img class="primeira_foto" src="./img/essa_mina_eh_maluca.jpg" alt="A imagem mostra uma mãe com a filha em um parque. Elas estão usando
+            roupas combinando, uma camiseta branca com folhas verdes e short jeans, a mãe está sentada recebendo um beijo da filha">
+
+            <div class="sobre">
+                <b><p class="sobre_titulo">Olá, somos a G&TO!</p></b>
+                <p class="sobre_texto">Uma casa de moda comprometida com o movimento ESG,
+                    para quem buscar por roupas confortáveis e despojadas.</p>
+                <button class="btn_esg">
+                    <b><a href="#conheca_esg">Conheça a ESG</a></b>
+                </button>
+            </div>
+        </section>
+
+        <section class="data">
+            <b><p>Lançamento da <span>g&to</span></p></b>
+            <b><time datetime="2023-06-06">21/06/2023</time></b>
+        </section>
+
+        <section class="imagens">
+            <div class="imgs">
+                <img src="./img/mano_menezes.jpg" alt="A imagem mostra um homem com cabelo black-power na frente de uma parede bege de tijolos de pedra, utilizando uma blusa dividida diagonalmente entre as cores verde e branca.
+                A blusa também apresenta uma estampa amarela em formato semelhante ao de uma letra S, e o homem utiliza uma calça ou bermuda preta. Não é possível identificar se é uma calça ou bermuda pois a imagem não mostra as pernas ">
+                <img src="./img/ela.jpg" alt="A imagem mostra duas garotas alegres e bonitas tomando bebidas geladas (raspadinhas). Ambas vestem
+                camisetas brancas e shorts jeans.">
+                <img src="./img/mina_seus_cabelo_eh_dahora.jpg" alt="A imagem mostra uma mulher usando uma camiseta preta com estampa escrita Forever or Never em texto
+                branco, a modelo utiliza uma jaqueta jeans escura. ">
+
+            </div>
+        </section>
+
+        <section class="esg alinhamento" id="conheca_esg">
+            <div class="sobre_esg">
+                <b><p class="sobre_esg_titulo">O que é ESG?</p></b>
+                <p class="sobre_esg_texto">
+                    ESG é um conjunto de ideias e práticas que avaliam como as empresas cuidam do meio ambiente, das
+                    pessoas que trabalham com elas e de como são administradas. Por exemplo, uma empresa que usa materiais recicláveis
+                    e se preocupa em ter um ambiente de trabalho saudável para os funcionários tem uma boa nota no ESG. Isso é importante
+                    porque muitas pessoas estão preocupadas em apoiar empresas que cuidam do mundo e das pessoas, não só em ganhar
+                    dinheiro.
+                </p>
+            </div>
+            <img class= "isg" src="./img/isg.jpg" alt="A imagem mostra um homem na rua utilizando uma blusa de moletom branca com estampa preta escrito M J G.
+            Além disso, o modelo utiliza calça preta e tênis branco. ">
+        </section>
+
+        <section class="formulario">
+            <b><p class="formulario_titulo">Ficou alguma dúvida?</p></b>
+
+            <form method="post" action="mailto:geto@gmail.com" enctype="text/plain">
+                <div>
+                    <label for="name">Nome:</label>
+                    <input class="borda" type="text" id="name" name="name">
+
+                    <label for="email">Email:</label>
+                    <input class="borda" type="email" id="email" name="email">
+
+                    <label for="message">Dúvida:</label>
+                    <textarea class="borda" name="message" id="message" cols="30" rows="10"></textarea>
+                    <button class="btn_forms" type="submit" onclick="mensagem()">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="contato alinhamento" id="contato">
+            <b><p class="contato_titulo">Contato</p></b>
+            <div class="contato_conteudo">
+                <div class="borda_mapa">
+
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.7012826071623!2d-46.57204782474696!3d-23.61504377876301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cec3e8f7969%3A0xe0072946c4b1803e!2sR.%20Niter%C3%B3i%20-%20Centro%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009510-200!5e0!3m2!1spt-BR!2sbr!4v1683121546269!5m2!1spt-BR!2sbr"
+                        class="mapa" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                </div>
+
+                <div class="contato_info">
+
+                    <div class="info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(99)99999-9999</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>contato@geto.com</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Rua Niteroi, 180 - SCS</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>@geto</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <p>@geto</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>@geto</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="outono_inverno">
+            <div>
+                <b><p class="outono_titulo">Coleção Outono & Inverno</p></b>
+            </div>
+
+            <div>
+                <img class="banner_outono" src="./img/BANNER-G&TO outono.png" alt="Trata-se de um banner da coleção Outono e Inverno da marca, que contém várias folhas secas e algodões em seu background,
+                o logo da jeito em seu centro e uma mulher em seu canto esquerdo, que está usando uma blusa de lã branca e uma touca amarela que contém o logo da G&TO em seu centro.">
+            </div>
+
+            <section class="fotos">
+                <div class="fts">
+                    <img src="./img/mina_de_roupao.jpg" alt="Mina de ropao meu">
+                    <img src="./img/maconhero.png" alt="   maconha">
+                    <img src="./img/lorona.jpg" alt=" gata ">
+                    
+             </section>
+        </section>
+
+        
+
+    </main>
+    <footer>
+        <p>Todos os direitos reservados &#169; G&TO</p>
+        <!-- <div class="nome"></div>
+        <div class="nome"></div>
+        <div class="nome"></div> -->
+
+    </footer>
+
+</body>
+
+</html>
